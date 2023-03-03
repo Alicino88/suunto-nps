@@ -3,12 +3,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&display=swap");
 * {
   font-family: "Figtree";
+  box-sizing: border-box;
+  margin: 0;
 }
 
 h1 {
   font-size: 3.8rem;
 }
 
-span {
-  color: #147eab;
+body {
+  --primary: #147eab;
+  --background: #ffffff;
+  --background-dim: #f3f3f3;
+  --background-dim-light: #f9f9f9;
+  --primary-foreground: #ffffff;
+  --foreground: #161616;
+  --base-unit: 8px;
 }

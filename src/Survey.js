@@ -1,7 +1,10 @@
-import "survey-core/modern.min.css";
+/*to customizw survey colors https://surveyjs.io/form-library/examples/create-custom-ui-theme/reactjs#content-docs */
+
+import "survey-core/defaultV2.min.css";
 import { Model } from "survey-core";
 import { Survey } from "survey-react-ui";
-
+import Container from "react-bootstrap/Container";
+import Col from "react-bootstrap/Col";
 const surveyJson = {
   elements: [
     {
@@ -82,7 +85,15 @@ const surveyJson = {
 
 const NPSSurvey = () => {
   const survey = new Model(surveyJson);
-  return <Survey model={survey} />;
+  return (
+    <>
+      <Container className="bg-light px-0">
+        <Col md={8} className="ms-5 py-5">
+          <Survey model={survey} />
+        </Col>
+      </Container>
+    </>
+  );
 };
 
 export default NPSSurvey;
