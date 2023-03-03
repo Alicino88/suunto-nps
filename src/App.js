@@ -1,10 +1,13 @@
 import "./App.css";
+import NavBar from "./NavBar";
+import Header from "./Header";
 import Survey from "./Survey";
 
 function App() {
   return (
     <>
-      <div className="App">Suunto landing page</div>
+      <NavBar />
+      <Header />
       <Survey />
     </>
   );
