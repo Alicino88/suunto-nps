@@ -1,94 +1,18 @@
 /*to customizw survey colors https://surveyjs.io/form-library/examples/create-custom-ui-theme/reactjs#content-docs */
 
-import "survey-core/defaultV2.min.css";
+import "survey-core/defaultV2.css";
 import { Model } from "survey-core";
 import { Survey } from "survey-react-ui";
+import { json } from "./json";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
-const surveyJson = {
-  elements: [
-    {
-      type: "rating",
-      name: "RecommendSuunto",
-      title:
-        "How likely would you recommend Suunto to your friends and colleagues?",
-      description: "",
-      minRateDescription: "not at all",
-      maxRateDescription: "extremely likely",
-      rateMax: 10,
-    },
-    {
-      name: "RecommendExplanation",
-      title: "Please tell us why you gave that score.",
-      type: "comment",
-    },
-
-    {
-      type: "rating",
-      name: "OverallSatisfaction",
-      title: "Overall, how satisfied are you with Suunto?",
-      description: "",
-      minRateDescription: "not at all",
-      maxRateDescription: "extremely likely",
-      rateMax: 10,
-    },
-    {
-      type: "html",
-      name: "info",
-      html: "<div><h3>4. How much do you agree with the following statements:</h3><p>Reply from a scale from 1 to 10</p><div>",
-    },
-    {
-      type: "rating",
-      name: "Appreciation",
-      title: "Suunto shows appreciation for me as a customer",
-      rateMax: 10,
-      hideNumber: true,
-    },
-    {
-      type: "rating",
-      name: "getHelp",
-      title: "It is easy to get help from Suunto whenever I need to",
-      rateMax: 10,
-      hideNumber: true,
-    },
-    {
-      type: "rating",
-      name: "innovativeSolutions",
-      title:
-        "Suunto offers innovative solutions that make my everyday life easier",
-      rateMax: 10,
-      hideNumber: true,
-    },
-    {
-      type: "rating",
-      name: "needFit",
-      title: "Suunto’s range of products and services fit my needs",
-      rateMax: 10,
-      hideNumber: true,
-    },
-    {
-      type: "rating",
-      name: "worksWell",
-      title: "Suunto’s products work well whenever I need them",
-      rateMax: 10,
-      hideNumber: true,
-    },
-    {
-      type: "rating",
-      name: "valueeForMoney",
-      title: "Suunto provides value for money",
-      rateMax: 10,
-      hideNumber: true,
-    },
-  ],
-};
 
 const NPSSurvey = () => {
-  const survey = new Model(surveyJson);
+  const survey = new Model(json);
   return (
     <>
       <Container className="bg-light px-0">
-        <Col md={8} className="ms-5 py-5">
+        <Col lg={9} className="py-3 mx-auto">
           <Survey model={survey} />
         </Col>
       </Container>
@@ -97,3 +21,9 @@ const NPSSurvey = () => {
 };
 
 export default NPSSurvey;
+
+/*
+"type": "panel",
+      "name": "panel1",
+      "title": "Please, help us improve our product",
+      */
