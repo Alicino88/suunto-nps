@@ -12,7 +12,7 @@ const NPSSurvey = () => {
   return (
     <>
       <Container className="bg-light px-0">
-        <Col lg={9} className="py-3 px-3 mx-auto">
+        <Col lg={9} className="py-3 px-1 mx-auto">
           <Survey model={survey} />
         </Col>
       </Container>
