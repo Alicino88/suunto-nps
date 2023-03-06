@@ -4,18 +4,12 @@ export const json = {
     {
       expression:
         "{nps-score} + {nps-score1} + {nps-score2} + {nps-score3} + {nps-score4} + {nps-score5} + {nps-score6} + {nps-score7}  <= 63",
-      html: {
-        default:
-          "Thanks for your feedback. Our goal is to create the best possible product, and your thoughts, ideas, and suggestions play a major role in helping us identify opportunities to improve.",
-      },
+      html: "<p style='padding: 0 25px'>Thanks for your feedback.</p><p> Our goal is to create the best possible product, and your thoughts, ideas, and suggestions play a major role in helping us identify opportunities to improve.</p>",
     },
     {
       expression:
         "{nps-score} + {nps-score1} + {nps-score2} + {nps-score3} + {nps-score4} + {nps-score5} + {nps-score6} + {nps-score7} >= 64",
-      html: {
-        default:
-          "Thanks for your feedback. It's great to hear that you're a fan of our product. Your feedback helps us discover new opportunities to improve it and make sure you have the best possible experience.",
-      },
+      html: "<p style='margin-left:5px; margin-right:5px'>Thanks for you feedback. It is great to hear that you are a fan of our product.</p><p> Follow Suunto on <a href='https://www.instagram.com/suunto/?hl=en' target='_blank' style='color:#147eab'>Instagram</a> and <a href='https://www.facebook.com/Suunto/' target='_blank' style='color:#147eab'>Facebook</a></p>",
     },
   ],
   elements: [
