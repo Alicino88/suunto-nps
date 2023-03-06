@@ -3,7 +3,7 @@ import { Container, Col } from "react-bootstrap";
 const IntroText = () => {
   return (
     <Container className="bg-light px-0 justify-content-center d-flex">
-      <Col md={7} lg={6} className="pt-5 px-1 text-center">
+      <Col md={7} lg={6} className="pt-5 px-3 text-center">
         <p className="fs-6 fw-semibold">
           What do you think of using our product so far?
         </p>
