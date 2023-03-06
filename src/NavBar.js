@@ -9,8 +9,8 @@ function NavBar() {
         <Navbar.Brand href="#home">
           <img
             src={logo}
-            width="100"
-            height="40"
+            width="90"
+            height="30"
             className="d-inline-block align-top ms-4"
             alt="suunto logo"
           />
