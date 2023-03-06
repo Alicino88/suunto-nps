@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import NavBar from "./NavBar";
 import Header from "./Header";
 import Survey from "./Survey";

@@ -1,14 +1,10 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
-
+@import "custom.scss";
+@import "~bootstrap/scss/bootstrap";
 @import url("https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&display=swap");
 * {
   font-family: "Figtree";
   box-sizing: border-box;
   margin: 0;
-}
-
-h1 {
-  font-size: 3.8rem;
 }
 
 body {
