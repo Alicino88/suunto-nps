@@ -17,12 +17,12 @@ const Header = () => {
             minHeight: "300px",
           }}
         />
-        <div className="d-flex position-absolute top-0 s-0 bottom-0 e-0 text-white align-items-center justify-content-center">
+        <div className="d-flex position-absolute top-0 w-100 h-100 text-white align-items-center justify-content-center">
           <div className="text-center">
-            <h1 className="fw-bold display-2">HI, PARISA</h1>
-            <h2 className="fw-semibold">Thank you for buying Suunto!</h2>
-            <span className="d-block border-bottom border-2 border-danger"></span>
-            <p className="mt-3 fs-5 fw-semibold">We are so happy to have you</p>
+            <h1 className="fw-bold display-4">HI, PARISA</h1>
+            <h2 className="fw-semibold fs-4">Thank you for buying Suunto!</h2>
+            <span className="d-block border-bottom border-2 border-info"></span>
+            <p className="mt-3 fs-6 fw-semibold">We are so happy to have you</p>
           </div>
         </div>
       </Container>
