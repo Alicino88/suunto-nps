@@ -3,19 +3,19 @@ export const json = {
   completedHtmlOnCondition: [
     {
       expression:
-        "{nps-score} + {nps-score1} + {nps-score2} + {nps-score3} + {nps-score4} + {nps-score5} + {nps-score6} + {nps-score7}  <= 63",
+        "{wouldYouRecommend} + {howSatisfied} + {suuntoShowsAppreciation} + {gettingHelp} + {innovativeSolutions} + {fitsMyNeeds} + {productsWorkWell} + {valueForMoney}  <= 63",
       html: "<p style='padding: 0 25px'>Thanks for your feedback.</p><p> Our goal is to create the best possible product, and your thoughts, ideas, and suggestions play a major role in helping us identify opportunities to improve.</p>",
     },
     {
       expression:
-        "{nps-score} + {nps-score1} + {nps-score2} + {nps-score3} + {nps-score4} + {nps-score5} + {nps-score6} + {nps-score7} >= 64",
+        "{wouldYouRecommend} + {howSatisfied} + {suuntoShowsAppreciation} + {gettingHelp} + {innovativeSolutions} + {fitsMyNeeds} + {productsWorkWell} + {valueForMoney} >= 64",
       html: "<p style='margin-left:5px; margin-right:5px'>Thanks for you feedback. It is great to hear that you are a fan of our product.</p><p> Follow Suunto on <a href='https://www.instagram.com/suunto/?hl=en' target='_blank' style='color:#147eab'>Instagram</a> and <a href='https://www.facebook.com/Suunto/' target='_blank' style='color:#147eab'>Facebook</a></p>",
     },
   ],
   elements: [
     {
       type: "rating",
-      name: "nps-score",
+      name: "wouldYouRecommend",
       title:
         "How likely would you recommend Suunto to your friends and colleagues?",
       description:
@@ -27,7 +27,7 @@ export const json = {
       isRequired: true,
     },
     {
-      name: "RecommendExplanation",
+      name: "whyYouGaveThatScore",
       title: "Please tell us why you gave that score.",
       type: "comment",
     },
@@ -38,7 +38,7 @@ export const json = {
       elements: [
         {
           type: "rating",
-          name: "nps-score1",
+          name: "howSatisfied",
           title: "Overall, how satisfied are you with Suunto?",
           description: "",
           rateMax: 10,
@@ -47,21 +47,21 @@ export const json = {
 
         {
           type: "rating",
-          name: "nps-score2",
+          name: "suuntoShowsAppreciation",
           title: "Suunto shows appreciation for me as a customer",
           rateMax: 10,
           isRequired: true,
         },
         {
           type: "rating",
-          name: "nps-score3",
+          name: "gettingHelp",
           title: "It is easy to get help from Suunto whenever I need to",
           rateMax: 10,
           isRequired: true,
         },
         {
           type: "rating",
-          name: "nps-score4",
+          name: "innovativeSolutions",
           title:
             "Suunto offers innovative solutions that make my everyday life easier",
           rateMax: 10,
@@ -69,21 +69,21 @@ export const json = {
         },
         {
           type: "rating",
-          name: "nps-score5",
+          name: "fitsMyNeeds",
           title: "Suunto’s range of products and services fit my needs",
           rateMax: 10,
           isRequired: true,
         },
         {
           type: "rating",
-          name: "nps-score6",
+          name: "productsWorkWell",
           title: "Suunto’s products work well whenever I need them",
           rateMax: 10,
           isRequired: true,
         },
         {
           type: "rating",
-          name: "nps-score7",
+          name: "valueForMoney",
           title: "Suunto provides value for money",
           rateMax: 10,
           isRequired: true,
